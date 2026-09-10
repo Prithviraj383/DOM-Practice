@@ -75,6 +75,10 @@ document.getElementById("todoInput").addEventListener("keypress", function(e){
     if(e.key === "Enter") addTodo()
 })
 
+document.getElementById("addTodoBtn").addEventListener('click', ()=>{
+    addTodo()
+})
+
 // Add filter functionality
 document.querySelector(".filters").addEventListener("click", (e)=>{
     const filterBtn = e.target.closest(".filter-btn")
